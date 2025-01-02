@@ -15,7 +15,6 @@
 //   15. Least Common Multiple (LCM)
 //   16. Number Rotation
 
-
 //        Mathematical Algorithms :
 
 //        Greatest Common Divisor (GCD)
@@ -75,9 +74,9 @@ public class  Integer{
 //    Sum of natural numbers 10 is : 55
 
 //      *******************************************************************************************************
-//
+
 //                                             Fibonacci Series
-//
+
 import java.util.Scanner;
 public class Integer {
    public static void main(String[] args) {
@@ -100,15 +99,14 @@ public class Integer {
        }
    }
 }
-//
+
 //        Enter a Number :10
 //        Fibonacci Series of a number 10 is : 0 1 1 2 3 5 8 13 21 34
-//
-//
+
 //        **************************************************************************************************
-//
+
 //                                          Tables
-//
+
 public class Integer {
    public static void main(String[] args) {
        int num=5;
@@ -131,10 +129,9 @@ public class Integer {
 //        5 * 10 = 50
 //
 //          **************************************************************************************************
-//
-//
+
 //                                               Sum Of Digit
-//
+
 public class Integer {
    public static void main(String[] args) {
        int num=14355;
@@ -262,7 +259,7 @@ public class Integer {
 
 //                                 Even Number and Odd Number
 
-//import java.util.Scanner;
+import java.util.Scanner;
 public class Integer {
    public static void main(String[] args) {
        Scanner sc=new Scanner(System.in);
@@ -285,7 +282,7 @@ public class Integer {
 
 //                                     Prime Number Or not
 
-//import java.util.Scanner;
+import java.util.Scanner;
 public class Integer {
    public static void main(String[] args) {
        Scanner sc=new Scanner(System.in);
@@ -317,7 +314,7 @@ public class Integer {
 
 //                         Highest Common Factor (HCF) ( Largest Common Factor Returns)
 
-//import java.util.Scanner;
+import java.util.Scanner;
 public class Integer {
    public static void main(String[] args) {
        Scanner sc=new Scanner(System.in);
@@ -344,7 +341,7 @@ public class Integer {
 
 //                                                 Leap Year Or Not
 
-//import java.util.Scanner;
+import java.util.Scanner;
 public class Integer {
    public static void main(String[] args) {
        Scanner sc=new Scanner(System.in);
@@ -367,7 +364,7 @@ public class Integer {
 
 //                                           Least Common Multiple (LCM)
 
-//import java.util.Scanner;
+import java.util.Scanner;
 public class Integer {
    public static int gcd(int a,int b){
        while(b > 0){
