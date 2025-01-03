@@ -24,18 +24,21 @@
 //        Euclidean Algorithm
 //        Floyd’s Cycle Detection Algorithm
 
-//                                ****************************************
+//   **************************************
 
-//                                                 Factorial
+//                 Factorial
 
 public class  Integer{
    public static void main(String[] args) {
        int num=5;
        int i=1;
        int factorial=1;
-       while (i<=num){                     // 1<=5    2<=5     3<=5    4<=5      5<=5  6<=5(loop Terminates)
-           factorial =factorial * i;       // 1=1*1 , 1=1*2 , 2=2*3  , 6=6*4  , 24=24*5  =120
-           i++;                            //  i=1  ,  i=2 ,  i=3    ,  i=4    ,    i=5
+       while (i<=num){                     
+// 1<=5    2<=5     3<=5    4<=5      5<=5  6<=5(loop Terminates)
+           factorial =factorial * i;       
+// 1=1*1 , 1=1*2 , 2=2*3  , 6=6*4  , 24=24*5  =120
+           i++;                            
+//  i=1  ,  i=2 ,  i=3    ,  i=4    ,    i=5
        }
        System.out.println("Factorial of number "+num+ " is : "+factorial);    // factorial = 120
    }
@@ -50,9 +53,10 @@ public class  Integer{
 //    Factorial of number 5 is : 120
 
 
-//          *********************************************************************************************
+//   **************************************
 
-//                                  Sum Of Natural Numbers
+//            Sum Of Natural Numbers
+
 public class  Integer{
    public static void main(String[] args) {
        int num=10;
@@ -73,9 +77,9 @@ public class  Integer{
 
 //    Sum of natural numbers 10 is : 55
 
-//      *******************************************************************************************************
+//  ****************************************
 
-//                                             Fibonacci Series
+//               Fibonacci Series
 
 import java.util.Scanner;
 public class Integer {
@@ -103,9 +107,9 @@ public class Integer {
 //        Enter a Number :10
 //        Fibonacci Series of a number 10 is : 0 1 1 2 3 5 8 13 21 34
 
-//        **************************************************************************************************
+//  *****************************************
 
-//                                          Tables
+//                   Tables
 
 public class Integer {
    public static void main(String[] args) {
@@ -127,19 +131,22 @@ public class Integer {
 //        5 * 8 = 40
 //        5 * 9 = 45
 //        5 * 10 = 50
-//
-//          **************************************************************************************************
 
-//                                               Sum Of Digit
+//   ****************************************
+
+//                 Sum Of Digit
 
 public class Integer {
    public static void main(String[] args) {
        int num=14355;
        int p=num;
        int sum=0;
-       while(p != 0){        // 14355 != 0  1435 != 0   143 != 0  14 != 0 1 != 0 0 !=0(loop terminates)
-           sum=sum + p % 10; // 0=0+(14355 % 10) 5 comes out sum=5  5=5+(1435 % 10) sum=10 10=10+(143%10) sum=13 sum=17 sum=18
-           p= p/10;          // 14355/10  == 1435   1435/10  == 143  143/10  == 14  14/10 == 1 1/10 == 0
+       while(p != 0){        
+// 14355 != 0  1435 != 0   143 != 0  14 != 0 1 != 0 0 !=0(loop terminates)
+           sum=sum + p % 10;
+ // 0=0+(14355 % 10) 5 comes out sum=5  5=5+(1435 % 10) sum=10 10=10+(143%10) sum=13 sum=17 sum=18
+           p= p/10;         
+ // 14355/10  == 1435   1435/10  == 143  143/10  == 14  14/10 == 1 1/10 == 0
        }
        System.out.println(" Sum of the Digit "+num+" is : "+sum);
    }
@@ -147,19 +154,24 @@ public class Integer {
 
 //    Sum of the Digit 14355 is : 18
 
-//     ******************************************************************************************************
+//  ****************************************
 
-//                                 Number of Digits in a Number (Count)
+//    Number of Digits in a Number (Count)
+
 public class Integer {
    public static void main(String[] args) {
        int num=12345;
        int Count=0;
        int sum=0,p=num;
 
-       while(num != 0){             // 12345 != 0  1234 !=0 123!=0 12!=0 1!=0 0!=0(loop terminates)
-           sum=sum + num % 10;      // 0=0+(12345 % 10) sum=5 5=5+(1234%10) sum=9.........
-           Count++;                 //ct=1 ct=2 ct=3 ct=4 ct=5...
-           num= num/10;             // 12345/10 =1234 1234/10=123 123/10=12 12/10=1 1/10=0
+       while(num != 0){            
+ // 12345 != 0  1234 !=0 123!=0 12!=0 1!=0 0!=0(loop terminates)
+           sum=sum + num % 10;      
+// 0=0+(12345 % 10) sum=5 5=5+(1234%10) sum=9.........
+           Count++;                
+ //ct=1 ct=2 ct=3 ct=4 ct=5...
+           num= num/10;             
+// 12345/10 =1234 1234/10=123 123/10=12 12/10=1 1/10=0
        }
        System.out.println("Number Of Digits in "+p+" is : "+Count);  // return count=5
    }
@@ -167,20 +179,25 @@ public class Integer {
 
 //    Number Of Digits in 12345 is : 5
 
-//       ********************************************************************************************************
+//  **************************************
 
-//                                              Palindrome
+//.                Palindrome
 
 public class Integer {
    public static void main(String[] args) {
        int num=12121;
        int reverse=0,p=num;
-       while(num != 0){             // 12121 !=0  1212 !=0  121 !=0  12 !=0  1 !=0  0 !=0(loop terminates)
-           int d =  num % 10;       // 12121 % 10=1  1212%10=2 121%10=1 12%10=2 1%10=1
-           reverse =reverse *10+d;  // 0=0*10+1  1=1*10+2 12=12*10+1 121=121*10+2 1212=1212*10+1 ==12121
-           num= num/10;             // 12121/10 =1212  1212/10=121 121/10=12 12/10=1 1/10=0
+       while(num != 0){             
+// 12121 !=0  1212 !=0  121 !=0  12 !=0  1 !=0  0 !=0(loop terminates)
+           int d =  num % 10;      
+ // 12121 % 10=1  1212%10=2 121%10=1 12%10=2 1%10=1
+           reverse =reverse *10+d;  
+// 0=0*10+1  1=1*10+2 12=12*10+1 121=121*10+2 1212=1212*10+1 ==12121
+           num= num/10;            
+ // 12121/10 =1212  1212/10=121 121/10=12 12/10=1 1/10=0
        }
-       if(reverse==p){              // 12121==12121
+       if(reverse==p){              
+// 12121==12121
            System.out.println("It is a Palindrome : "+p);
        }else{
            System.out.println("It is not a Palindrome : "+p);
@@ -190,19 +207,23 @@ public class Integer {
 
 //    It is a Palindrome : 12121
 
-//         *****************************************************************************************************
+//   **************************************
 
-//                                              Reverse a Number
+//              Reverse a Number
 
 public class Integer {
    public static void main(String[] args) {
        int num=123;
        int sum=0,p=num;
 
-       while(num != 0){       // 123 !=0  12 !=0  1 !=0  0 !=0(loop terminates)
-           int d =  num % 10; // 123 % 10 = 3  12 % 10 =2  1 % 10 =1
-           sum =sum *10+d;    // 0=0*10+3 3=3*10+2 32=32*10+1 ==321
-           num= num/10;       // 123/10 = 12  12/10 =1  1/10 =0
+       while(num != 0){      
+ // 123 !=0  12 !=0  1 !=0  0 !=0(loop terminates)
+           int d =  num % 10; 
+// 123 % 10 = 3  12 % 10 =2  1 % 10 =1
+           sum =sum *10+d;   
+// 0=0*10+3 3=3*10+2 32=32*10+1 ==321
+           num= num/10;       
+// 123/10 = 12  12/10 =1  1/10 =0
        }
            System.out.println("A Number Before Reversing : "+p);
            System.out.println("A Number After Reversing : "+sum);
@@ -212,19 +233,23 @@ public class Integer {
 //        A Number Before Reversing : 123
 //        A Number After Reversing : 321
 
-//         *****************************************************************************************************
+//  ****************************************
 
-//                                                 ArmStrong Number
+//               ArmStrong Number
 
 public class Integer {
    public static void main(String[] args) {
        int num=153;
        int sum=0,p=num;
 
-       while(num != 0){         // 153 != 0    15 !=0 1   1!=0     0 !=0(loop terminates)
-           int d =  num % 10;   //  153 %10=3 15 %10=5  1%10=1
-           sum =sum +d*d*d;     // 0=0+3*3*3  27=27+5*5*5  152=152+1*1*1 ==153
-           num= num/10;         // 153/10=15  15/10=1  1/10=0
+       while(num != 0){         
+// 153 != 0    15 !=0 1   1!=0     0 !=0(loop terminates)
+           int d =  num % 10;   
+//  153 %10=3 15 %10=5  1%10=1
+           sum =sum +d*d*d;     
+// 0=0+3*3*3  27=27+5*5*5  152=152+1*1*1 ==153
+           num= num/10;         
+// 153/10=15  15/10=1  1/10=0
        }
        if(sum==p){              // 153 == 153
            System.out.println("It is a ArmStrong Number : "+p);
@@ -236,9 +261,9 @@ public class Integer {
 
 //    It is a ArmStrong Number : 153
 
-//           *******************************************************************************************
+//  ***************************************
 
-//                                      Swapping Two Numbers
+//             Swapping Two Numbers
 
 public class Integer {
    public static void main(String[] args) {
@@ -255,9 +280,9 @@ public class Integer {
 //        Before Swapping a = 5 , b = 10
 //        After Swapping a = 10 , b = 5
 
-//     **************************************************************************************************
+//  *****************************************
 
-//                                 Even Number and Odd Number
+//        Even Number and Odd Number
 
 import java.util.Scanner;
 public class Integer {
@@ -265,9 +290,11 @@ public class Integer {
        Scanner sc=new Scanner(System.in);
        System.out.print("Enter a Number : ");
        int num=sc.nextInt();     // num=2
-       if(num % 2 ==0){          // 2 % 2 == 0 true
+       if(num % 2 ==0){          
+// 2 % 2 == 0 true
            System.out.println("It is a Even Number : "+num);
-       } else if (num % 2 !=0) {  // 2 % 2 != 0  false
+       } else if (num % 2 !=0) {  
+// 2 % 2 != 0  false
            System.out.println("It is an Odd Number : "+num);
        } else{
            System.out.println("Please Enter a Number.........");
@@ -278,9 +305,9 @@ public class Integer {
 //        Enter a Number : 1
 //        It is an Odd Number : 1
 
-//         ***********************************************************************************************
+//  *************************************
 
-//                                     Prime Number Or not
+//           Prime Number Or not
 
 import java.util.Scanner;
 public class Integer {
@@ -294,12 +321,16 @@ public class Integer {
            System.out.println(num+" is not a Prime Number.");
        }
    }
-   public static boolean isPrime(int n){  // n=7  , n=2
-       if(n<=1){                          // 7<=1 ,  2<=1  false
+   public static boolean isPrime(int n){  
+// n=7  , n=2
+       if(n<=1){                        
+  // 7<=1 ,  2<=1  false
            return false;
        }
-       for (int i=2;i<Math.sqrt(n);i++){   // i=2 ,  2<2.64575   2<1.41416
-           if(n%i==0){                     // 7 % 2 == 0  (It will come 1) so, it is false  , 2 % 2 ==0 true
+       for (int i=2;i<Math.sqrt(n);i++){   
+// i=2 ,  2<2.64575   2<1.41416
+           if(n%i==0){                    
+ // 7 % 2 == 0  (It will come 1) so, it is false  , 2 % 2 ==0 true
                return false;
            }
        }
@@ -310,9 +341,9 @@ public class Integer {
 //        Enter a Number : 7
 //        7 is a Prime Number.
 
-//        **************************************************************************************************
+// ****************************************
 
-//                         Highest Common Factor (HCF) ( Largest Common Factor Returns)
+// Highest Common Factor (HCF) ( Largest Common Factor Returns)
 
 import java.util.Scanner;
 public class Integer {
@@ -337,9 +368,9 @@ public class Integer {
 //        Enter a Number B :60
 //        HCF of 36 and 60 is : 12
 
-//         ************************************************************************************************
+// ****************************************
 
-//                                                 Leap Year Or Not
+//           Leap Year Or Not
 
 import java.util.Scanner;
 public class Integer {
@@ -360,9 +391,9 @@ public class Integer {
 //        Enter a Year : 2028
 //        2028 it is a Leap Year
 
-//       ***************************************************************************************************
+// ****************************************
 
-//                                           Least Common Multiple (LCM)
+//        Least Common Multiple (LCM)
 
 import java.util.Scanner;
 public class Integer {
@@ -393,11 +424,11 @@ public class Integer {
 //        Enter a Number B :18
 //        LCM of 12 and 18 is : 36
 
-//           *************************************************************************************************
+//  *****************************************
 
-//                                            Number Rotation
+//            Number Rotation
 
-//import java.util.Scanner;
+import java.util.Scanner;
 public class Integer {
    public static void main(String[] args) {
        Scanner sc=new Scanner(System.in);
